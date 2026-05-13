@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustakim Hair Style</title>  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    header{
+      background:black;
+      padding:20px;
+      text-align:center;
+      border-bottom:2px solid gold;
+      position:sticky;
+      top:0;
+      z-index:999;
+    }
+
+    .logo svg{
+      width:120px;
+      height:120px;
+    }
+
+    .title{
+      color:gold;
+      font-size:32px;
+      margin-top:10px;
+      font-weight:bold;
+    }
+
+    .subtitle{
+      color:#ccc;
+      margin-top:5px;
+    }
+
+    .lang-btn{
+      margin-top:15px;
+      background:gold;
+      border:none;
+      padding:10px 20px;
+      border-radius:10px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    section{
+      padding:25px;
+    }
+
+    h2{
+      color:gold;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    .banner{
+      background:linear-gradient(to right,#000,#222);
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 0 15px rgba(255,215,0,0.3);
+    }
+
+    .banner h1{
+      color:gold;
+      font-size:36px;
+    }
+
+    .banner p{
+      margin-top:10px;
+      color:#ddd;
+    }
+
+    .btn{
+      margin-top:20px;
+      display:inline-block;
+      padding:12px 25px;
+      background:gold;
+      color:black;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#1b1b1b;
+      border-radius:20px;
+      overflow:hidden;
+      border:1px solid #333;
+      box-shadow:0 0 10px rgba(255,215,0,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:15px;
+    }
+
+    .card h3{
+      color:gold;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#0f0;
+      margin-top:10px;
+      font-weight:bold;
+    }
+
+    form{
+      background:#1b1b1b;
+      padding:25px;
+      border-radius:20px;
+      max-width:600px;
+      margin:auto;
+      box-shadow:0 0 10px rgba(255,215,0,0.2);
+    }
+
+    input,select,textarea{
+      width:100%;
+      padding:12px;
+      margin-top:10px;
+      margin-bottom:20px;
+      border:none;
+      border-radius:10px;
+      background:#333;
+      color:white;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      background:gold;
+      border:none;
+      border-radius:10px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .admin-panel{
+      background:#1b1b1b;
+      padding:25px;
+      border-radius:20px;
+      max-width:800px;
+      margin:auto;
+      box-shadow:0 0 10px rgba(255,215,0,0.2);
+    }
+
+    .order-box{
+      background:#222;
+      padding:15px;
+      border-radius:15px;
+      margin-top:15px;
+    }
+
+    footer{
+      background:black;
+      padding:25px;
+      text-align:center;
+      margin-top:40px;
+      border-top:2px solid gold;
+    }
+
+    .social a{
+      color:gold;
+      margin:10px;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    .timing-box{
+      background:#1b1b1b;
+      padding:20px;
+      border-radius:20px;
+      text-align:center;
+      margin-top:20px;
+      box-shadow:0 0 10px rgba(255,215,0,0.2);
+    }
+
+  </style></head>
+<body><header><div class="logo">
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg"><circle cx="110" cy="110" r="100" fill="black" stroke="gold" stroke-width="6"/><text x="110" y="85" font-size="40" text-anchor="middle" fill="gold">✂️</text>
+
+<text x="110" y="125"
+font-size="24"
+text-anchor="middle"
+fill="gold"
+font-family="Arial"
+font-weight="bold"> Mustakim </text>
+
+<text x="110" y="155"
+font-size="18"
+text-anchor="middle"
+fill="white"
+font-family="Arial"> Hair Style </text>
+
+</svg>
+</div><div class="title">Mustakim Hair Style</div>
+<div class="subtitle">Modern Hair Cut & Beard Styling</div><button class="lang-btn">🌐 বাংলা | English</button>
+
+</header><section>
+  <div class="banner">
+    <h1>Welcome to Mustakim Hair Style</h1>
+    <p>Bamongram Lalbazar, Kaliachak-1, Malda</p>
+    <a class="btn" href="#booking">Book Appointment</a>
+  </div>
+</section><section>
+  <h2>⏰ Shop Timing</h2>  <div class="timing-box">
+    <p>🌞 Morning: 9:00 AM - 12:30 PM</p>
+    <br>
+    <p>🌙 Evening: 3:00 PM - 8:30 PM</p>
+    <br>
+    <p>⏱️ Every booking slot = 30 Minutes</p>
+    <br>
+    <p>⚠️ Maximum Active Orders = 15</p>
+  </div>
+</section><section>
+  <h2>✂️ Our Services</h2>  <div class="service-grid"><div class="card">
+  <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000" alt="Hair Cut">
+  <div class="card-content">
+    <h3>Hair Cut</h3>
+    <p>Modern & Stylish Hair Cut</p>
+    <div class="price">₹80 - ₹150</div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1000" alt="Beard Cut">
+  <div class="card-content">
+    <h3>Beard Cut</h3>
+    <p>Professional Beard Styling</p>
+    <div class="price">₹50</div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000" alt="Face Wash">
+  <div class="card-content">
+    <h3>Face Wash</h3>
+    <p>4 Types Premium Face Wash</p>
+    <div class="price">₹120 - ₹300</div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000" alt="Hair Straight">
+  <div class="card-content">
+    <h3>Hair Straight</h3>
+    <p>Hair Straight & Set</p>
+    <div class="price">₹400+</div>
+  </div>
+</div>
+
+  </div>
+</section><section id="booking">
+  <h2>📅 Appointment Booking</h2>  <form id="bookingForm"><input type="text" id="name" placeholder="আপনার নাম / Your Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<select id="service">
+  <option>Hair Cut</option>
+  <option>Beard Cut</option>
+  <option>Face Wash</option>
+  <option>Hair Straight</option>
+</select>
+
+<input type="date" id="date" required>
+
+<select id="time">
+  <option>9:00 AM</option>
+  <option>9:30 AM</option>
+  <option>10:00 AM</option>
+  <option>10:30 AM</option>
+  <option>11:00 AM</option>
+  <option>11:30 AM</option>
+  <option>12:00 PM</option>
+  <option>3:00 PM</option>
+  <option>3:30 PM</option>
+  <option>4:00 PM</option>
+  <option>4:30 PM</option>
+  <option>5:00 PM</option>
+  <option>5:30 PM</option>
+  <option>6:00 PM</option>
+  <option>6:30 PM</option>
+  <option>7:00 PM</option>
+  <option>7:30 PM</option>
+  <option>8:00 PM</option>
+</select>
+
+<textarea placeholder="Extra Note"></textarea>
+
+<button type="submit">Book Now</button>
+
+  </form>
+</section><section>
+  <h2>👨‍💼 Admin Panel</h2>  <div class="admin-panel"><h3>Total Active Orders: <span id="count">0</span>/15</h3>
+
+<div id="orders"></div>
+
+  </div>
+</section><footer><h2>📍 Contact Us</h2><p>Mustakim Hair Style</p>
+<p>Bamongram Lalbazar, Kaliachak-1, Malda</p>
+<p>West Bengal - 732206</p>
+<p>📞 WhatsApp: 8250687140</p><br><div class="social"><a href="https://www.instagram.com/x___boy___t_o_u_s_i_f___143?igsh=OTZmYXpheHpqYnFo" target="_blank">📸 Instagram</a>
+
+<a href="https://www.facebook.com/share/1CdLBUF4x6/" target="_blank">📘 Facebook</a>
+
+<a href="https://youtube.com/@tousif-voice92?si=O73rGapdi5DOhB5r" target="_blank">▶️ YouTube</a>
+
+</div><br><p>© 2026 Mustakim Hair Style</p></footer><script>
+
+let orders = [];
+const maxOrders = 15;
+
+const form = document.getElementById('bookingForm');
+const ordersDiv = document.getElementById('orders');
+const count = document.getElementById('count');
+
+form.addEventListener('submit', function(e){
+
+  e.preventDefault();
+
+  if(orders.length >= maxOrders){
+    alert('আজকের Booking Full');
+    return;
+  }
+
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+
+  const order = {
+    id: Date.now(),
+    name,
+    phone,
+    service,
+    date,
+    time
+  };
+
+  orders.push(order);
+
+  renderOrders();
+
+  const whatsappMessage = https://wa.me/918250687140?text=New Booking%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0ATime: ${time};
+
+  window.open(whatsappMessage,'_blank');
+
+  alert('Booking Successful');
+
+  form.reset();
+
+});
+
+function renderOrders(){
+
+  ordersDiv.innerHTML = '';
+
+  count.innerText = orders.length;
+
+  orders.forEach(order => {
+
+    ordersDiv.innerHTML += `
+
+      <div class="order-box">
+        <p><b>Name:</b> ${order.name}</p>
+        <p><b>Phone:</b> ${order.phone}</p>
+        <p><b>Service:</b> ${order.service}</p>
+        <p><b>Date:</b> ${order.date}</p>
+        <p><b>Time:</b> ${order.time}</p>
+
+        <button onclick="completeOrder(${order.id})">✅ Complete</button>
+      </div>
+
+    `;
+
+  });
+
+}
+
+function completeOrder(id){
+
+  orders = orders.filter(order => order.id !== id);
+
+  renderOrders();
+
+}
+
+</script></body>
+</html>
