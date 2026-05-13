@@ -11,7 +11,8 @@
     }
 
     body{
-      background:#111;
+      background:linear-gradient(180deg,#050505,#111827,#050505);
+      min-height:100vh;
       color:white;
     }
 
@@ -63,11 +64,12 @@
     }
 
     .banner{
-      background:linear-gradient(to right,#000,#222);
-      padding:30px;
-      border-radius:20px;
+      background:linear-gradient(135deg,#111827,#1f2937,#111827);
+      padding:40px 25px;
+      border-radius:28px;
       text-align:center;
-      box-shadow:0 0 15px rgba(255,215,0,0.3);
+      border:1px solid rgba(255,215,0,0.2);
+      box-shadow:0 0 30px rgba(255,215,0,0.15);
     }
 
     .banner h1{
@@ -202,7 +204,7 @@
     }
 
   </style></head>
-<body><header><div class="logo">
+<body><!-- ================= HEADER SECTION ================= --><header><div class="logo">
 <svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg"><circle cx="110" cy="110" r="100" fill="black" stroke="gold" stroke-width="6"/><text x="110" y="85" font-size="40" text-anchor="middle" fill="gold">✂️</text>
 
 <text x="110" y="125"
@@ -222,13 +224,13 @@ font-family="Arial"> Hair Style </text>
 </div><div class="title">Mustakim Hair Style</div>
 <div class="subtitle">Modern Hair Cut & Beard Styling</div><button class="lang-btn">🌐 বাংলা | English</button>
 
-</header><section>
+</header><!-- ================= HERO SECTION ================= --><section>
   <div class="banner">
     <h1>Welcome to Mustakim Hair Style</h1>
-    <p>Bamongram Lalbazar, Kaliachak-1, Malda</p>
-    <a class="btn" href="#booking">Book Appointment</a>
+    <p>Premium Salon Experience • Bamongram Lalbazar, Malda</p>
+    <a class="btn" href="#booking">✂️ Book Appointment</a>
   </div>
-</section><section>
+</section><!-- ================= SHOP TIMING SECTION ================= --><section>
   <h2>⏰ Shop Timing</h2>  <div class="timing-box">
     <p>🌞 Morning: 9:00 AM - 12:30 PM</p>
     <br>
@@ -238,9 +240,11 @@ font-family="Arial"> Hair Style </text>
     <br>
     <p>⚠️ Maximum Active Orders = 15</p>
   </div>
-</section><section>
-  <h2>✂️ Our Services</h2>  <div class="service-grid"><div class="card">
-  <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000" alt="Hair Cut">
+</section><!-- ================= SERVICES SECTION ================= --><section>
+  <h2>✂️ Our Services</h2>  <div class="service-grid" id="serviceGrid"><!-- নিজের ছবি এখানে add করো -->
+
+<div class="card">
+  <img src="images/haircut.jpg" alt="Hair Cut">
   <div class="card-content">
     <h3>Hair Cut</h3>
     <p>Modern & Stylish Hair Cut</p>
@@ -249,7 +253,7 @@ font-family="Arial"> Hair Style </text>
 </div>
 
 <div class="card">
-  <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1000" alt="Beard Cut">
+  <img src="images/beard.jpg" alt="Beard Cut">
   <div class="card-content">
     <h3>Beard Cut</h3>
     <p>Professional Beard Styling</p>
@@ -257,72 +261,30 @@ font-family="Arial"> Hair Style </text>
   </div>
 </div>
 
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000" alt="Face Wash">
-  <div class="card-content">
-    <h3>Face Wash</h3>
-    <p>4 Types Premium Face Wash</p>
-    <div class="price">₹120 - ₹300</div>
   </div>
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000" alt="Hair Straight">
-  <div class="card-content">
-    <h3>Hair Straight</h3>
-    <p>Hair Straight & Set</p>
-    <div class="price">₹400+</div>
-  </div>
-</div>
-
-  </div>
-</section><section id="booking">
+</section><!-- ================= BOOKING SECTION ================= --><section id="booking">
   <h2>📅 Appointment Booking</h2>  <form id="bookingForm"><input type="text" id="name" placeholder="আপনার নাম / Your Name" required>
 
 <input type="tel" id="phone" placeholder="Phone Number" required>
 
-<select id="service">
-  <option>Hair Cut</option>
-  <option>Beard Cut</option>
-  <option>Face Wash</option>
-  <option>Hair Straight</option>
-</select>
+<p style="margin-bottom:15px;color:#aaa;font-size:14px;">
+নাম এবং মোবাইল নম্বর দিলেই booking করা যাবে
+</p>
 
-<input type="date" id="date" required>
+<button type="submit">✅ Confirm Booking</button>
 
-<select id="time">
-  <option>9:00 AM</option>
-  <option>9:30 AM</option>
-  <option>10:00 AM</option>
-  <option>10:30 AM</option>
-  <option>11:00 AM</option>
-  <option>11:30 AM</option>
-  <option>12:00 PM</option>
-  <option>3:00 PM</option>
-  <option>3:30 PM</option>
-  <option>4:00 PM</option>
-  <option>4:30 PM</option>
-  <option>5:00 PM</option>
-  <option>5:30 PM</option>
-  <option>6:00 PM</option>
-  <option>6:30 PM</option>
-  <option>7:00 PM</option>
-  <option>7:30 PM</option>
-  <option>8:00 PM</option>
-</select>
-
-<textarea placeholder="Extra Note"></textarea>
-
-<button type="submit">Book Now</button>
+<button type="button" onclick="cancelBooking()" style="margin-top:10px;background:#dc2626;color:white;">
+❌ Cancel Booking
+</button>
 
   </form>
-</section><section>
+</section><!-- ================= ADMIN PANEL SECTION ================= --><section>
   <h2>👨‍💼 Admin Panel</h2>  <div class="admin-panel"><h3>Total Active Orders: <span id="count">0</span>/15</h3>
 
 <div id="orders"></div>
 
   </div>
-</section><footer><h2>📍 Contact Us</h2><p>Mustakim Hair Style</p>
+</section><!-- ================= FOOTER & SOCIAL MEDIA SECTION ================= --><footer><h2>📍 Contact Us</h2><p>Mustakim Hair Style</p>
 <p>Bamongram Lalbazar, Kaliachak-1, Malda</p>
 <p>West Bengal - 732206</p>
 <p>📞 WhatsApp: 8250687140</p><br><div class="social"><a href="https://www.instagram.com/x___boy___t_o_u_s_i_f___143?igsh=OTZmYXpheHpqYnFo" target="_blank">📸 Instagram</a>
@@ -331,7 +293,7 @@ font-family="Arial"> Hair Style </text>
 
 <a href="https://youtube.com/@tousif-voice92?si=O73rGapdi5DOhB5r" target="_blank">▶️ YouTube</a>
 
-</div><br><p>© 2026 Mustakim Hair Style</p></footer><script>
+</div><br><p>© 2026 Mustakim Hair Style</p></footer><!-- ================= JAVASCRIPT SECTION ================= --><script>
 
 let orders = [];
 const maxOrders = 15;
@@ -351,24 +313,17 @@ form.addEventListener('submit', function(e){
 
   const name = document.getElementById('name').value;
   const phone = document.getElementById('phone').value;
-  const service = document.getElementById('service').value;
-  const date = document.getElementById('date').value;
-  const time = document.getElementById('time').value;
-
   const order = {
     id: Date.now(),
     name,
-    phone,
-    service,
-    date,
-    time
+    phone
   };
 
   orders.push(order);
 
   renderOrders();
 
-  const whatsappMessage = https://wa.me/918250687140?text=New Booking%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0ATime: ${time};
+  const whatsappMessage = https://wa.me/918250687140?text=✂️ New Salon Booking%0A%0AName: ${name}%0APhone: ${phone};
 
   window.open(whatsappMessage,'_blank');
 
@@ -391,9 +346,7 @@ function renderOrders(){
       <div class="order-box">
         <p><b>Name:</b> ${order.name}</p>
         <p><b>Phone:</b> ${order.phone}</p>
-        <p><b>Service:</b> ${order.service}</p>
-        <p><b>Date:</b> ${order.date}</p>
-        <p><b>Time:</b> ${order.time}</p>
+        <p><b>Status:</b> Pending</p>
 
         <button onclick="completeOrder(${order.id})">✅ Complete</button>
       </div>
@@ -401,6 +354,14 @@ function renderOrders(){
     `;
 
   });
+
+}
+
+function cancelBooking(){
+
+  document.getElementById('bookingForm').reset();
+
+  alert('Booking Cancelled');
 
 }
 
